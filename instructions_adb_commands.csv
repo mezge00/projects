@@ -1,0 +1,193 @@
+Application Name,Instruction,ADB Command
+Gmail,Open the Gmail app.,adb shell am start -n com.google.android.gm/.ui.MailActivity
+Gmail,Tap on the 'Create Account' button.,adb shell input tap x1 y1
+Gmail,Enter your first name in the provided field.,adb shell input text 'John'
+Gmail,Enter your last name in the provided field.,adb shell input text 'Doe'
+Gmail,Enter your desired email address in the email field.,adb shell input text 'johndoe@example.com'
+Gmail,"Choose a strong password with a combination of letters, numbers, and special characters.",adb shell input text 'P@ssw0rd123'
+Gmail,Re-enter the chosen password in the confirmation field.,adb shell input text 'P@ssw0rd123'
+Gmail,"Optionally, provide a recovery email address for account recovery purposes.",adb shell input text 'recovery@example.com'
+Gmail,Accept the Google Terms of Service and Privacy Policy.,adb shell input tap x2 y2
+Gmail,Tap on the 'Next' button to proceed.,adb shell input tap x3 y3
+Facebook,Open the Facebook app.,adb shell am start -n com.facebook.katana/.LoginActivity
+Facebook,Tap on the 'Sign Up' or 'Create New Account' button.,adb shell input tap x1 y1
+Facebook,Enter your first name in the provided field.,adb shell input text 'John'
+Facebook,Enter your last name in the provided field.,adb shell input text 'Doe'
+Facebook,Enter your mobile number or email address in the provided field.,adb shell input text 'johndoe@example.com'
+Facebook,Choose a strong password for your account.,adb shell input text 'P@ssw0rd123'
+Facebook,Select your date of birth from the dropdown menus.,adb shell input tap x2 y2
+Facebook,Choose your gender from the options provided.,adb shell input tap x3 y3
+Facebook,Tap on the 'Sign Up' or 'Create Account' button to proceed.,adb shell input tap x4 y4
+Facebook,Verify your mobile number or email address by entering the code sent to you.,adb shell input text '123456'
+Facebook,Tap on the 'Verify' button to confirm your mobile number or email address.,adb shell input tap x5 y5
+Contacts,Open the Contacts app.,adb shell am start -n com.android.contacts/.activities.PeopleActivity
+Contacts,Add a new contact.,adb shell input tap x25 y25 && adb shell input text 'John Doe' && adb shell input tap x26 y26
+Notepad,Open the Notepad app.,adb shell am start -n com.google.android.keep/.activities.BrowseActivity
+Notepad,Create a new note.,adb shell input tap x27 y27 && adb shell input text 'Shopping List' && adb shell input tap x28 y28
+Google Translate,Open the Google Translate app.,adb shell am start -n com.google.android.apps.translate/.TranslateActivity
+Google Translate,Translate a phrase from English to Spanish.,adb shell input tap x29 y29 && adb shell input text 'Hello' && adb shell input tap x30 y30
+Play Music,Open the Play Music app.,adb shell am start -n com.google.android.music/.ui.HomeActivity
+Play Music,Play a song from your library.,adb shell input tap x31 y31 && adb shell input tap x32 y32
+Facebook,Open the Facebook app.,adb shell am start -n com.facebook.katana/.LoginActivity
+Facebook,Update your status.,adb shell input tap x33 y33 && adb shell input text 'Having a great day!' && adb shell input tap x34 y34
+LinkedIn,Open the LinkedIn app.,adb shell am start -n com.linkedin.android/.home.HomeActivity
+LinkedIn,Post a new update.,adb shell input tap x35 y35 && adb shell input text 'Excited to start my new job!' && adb shell input tap x36 y36
+Twitter,Open the Twitter app.,adb shell am start -n com.twitter.android/.LoginActivity
+Twitter,Retweet a tweet.,adb shell input tap x37 y37 && adb shell input tap x38 y38
+Instagram,Open the Instagram app.,adb shell am start -n com.instagram.android/.activity.MainTabActivity
+Instagram,Like a photo.,adb shell input tap x39 y39 && adb shell input tap x40 y40
+Clock,Open the Clock app.,adb shell am start -n com.google.android.deskclock/.DeskClock
+Clock,Set an alarm for 7:00 AM.,adb shell input tap x14 y14 && adb shell input text '7:00' && adb shell input tap x15 y15
+Calendar,Open the Calendar app.,adb shell am start -n com.google.android.calendar/.AllInOneActivity
+Calendar,Create a new event.,adb shell input tap x16 y16 && adb shell input text 'Meeting with John' && adb shell input tap x17 y17
+Gmail,Open the Gmail app.,adb shell am start -n com.google.android.gm/.ui.MailActivity
+Gmail,Compose a new email.,adb shell input tap x18 y18 && adb shell input text 'john@example.com' && adb shell input tap x19 y19
+Google Photos,Open the Google Photos app.,adb shell am start -n com.google.android.apps.photos/.home.HomeActivity
+Google Photos,View an album.,adb shell input tap x20 y20
+Weather,Open the Weather app.,adb shell am start -n com.google.android.apps.weather/.WeatherEntryActivity
+Weather,View the weather forecast for your location.,adb shell input tap x21 y21
+Voice Recorder,Open the Voice Recorder app.,adb shell am start -n com.google.android.apps.recorder/.RecorderActivity
+Voice Recorder,Start recording.,adb shell input tap x22 y22
+Google Drive,Open the Google Drive app.,adb shell am start -n com.google.android.apps.docs/.drive.startup.StartupActivity
+Google Drive,Upload a file.,adb shell input tap x23 y23
+Calculator,Open the Calculator app.,adb shell am start -n com.google.android.calculator/.Calculator
+Calculator,"Perform a calculation (e.g., 10 * 5).",adb shell input text '10*5' && adb shell input tap x24 y24
+Google Chrome,Open the Google Chrome app.,adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main
+Google Chrome,"Navigate to a website (e.g., www.example.com).",adb shell input text 'www.example.com' && adb shell input keyevent 66
+Calculator,Open the Calculator app.,adb shell am start -n com.android.calculator2/.Calculator
+Calculator,"Perform a simple calculation (e.g., 2 + 2).",adb shell input tap x1 y1 && adb shell input text '2+2' && adb shell input tap x2 y2
+Camera,Open the Camera app.,adb shell am start -n com.android.camera/com.android.camera.Camera
+Camera,Take a photo.,adb shell input tap x3 y3
+File Explorer,Open the File Explorer app.,adb shell am start -n com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity
+File Explorer,Navigate to a specific folder.,adb shell input tap x4 y4 && adb shell input text '/sdcard/Pictures' && adb shell input keyevent 66
+Settings,Open the Settings app.,adb shell am start -n com.android.settings/.Settings
+Settings,Change Wi-Fi settings.,adb shell input tap x5 y5 && adb shell input tap x6 y6
+Settings,Adjust display brightness.,adb shell input tap x7 y7 && adb shell input tap x8 y8
+Google Maps,Open the Google Maps app.,adb shell am start -n com.google.android.apps.maps/.MapsActivity
+Google Maps,"Search for a location (e.g., Eiffel Tower).",adb shell input text 'Eiffel Tower' && adb shell input keyevent 66
+Google Maps,Zoom in on the map.,adb shell input swipe x9 y9 x10 y10
+Google Play Store,Open the Google Play Store app.,adb shell am start -n com.android.vending/.AssetBrowserActivity
+Google Play Store,"Search for an app (e.g., Spotify).",adb shell input tap x11 y11 && adb shell input text 'Spotify' && adb shell input keyevent 66
+Google Play Store,Install the app.,adb shell input tap x12 y12 && adb shell input tap x13 y13
+Snapchat,Open the Snapchat app.,adb shell am start -n com.snapchat.android/.LandingPageActivity
+Snapchat,Take a photo using the camera.,adb shell input tap x1 y1
+Snapchat,Apply a filter to the photo.,adb shell input tap x2 y2
+Snapchat,Add a caption to the photo.,adb shell input tap x3 y3 && adb shell input text 'Fun times!'
+Snapchat,Send the photo to a friend.,adb shell input tap x4 y4
+Twitter,Open the Twitter app.,adb shell am start -n com.twitter.android/.StartActivity
+Twitter,Compose a new tweet.,adb shell input tap x5 y5
+Twitter,Enter your tweet text.,adb shell input text 'Just testing out a new feature!'
+Twitter,Add an image to your tweet.,adb shell input tap x6 y6
+Twitter,Tweet your message.,adb shell input tap x7 y7
+WhatsApp,Open a chat with a friend.,adb shell input tap x8 y8
+WhatsApp,Send a voice message.,adb shell input tap x9 y9
+WhatsApp,Send your location.,adb shell input tap x10 y10
+WhatsApp,Reply to a message with an emoji.,adb shell input tap x11 y11
+WhatsApp,Send a GIF.,adb shell input tap x12 y12
+Instagram,Open the Instagram app.,adb shell am start -n com.instagram.android/com.instagram.mainactivity.MainActivity
+Instagram,Scroll down to view posts on your feed.,adb shell input swipe x1 y1 x2 y2
+Instagram,Like the first post on your feed.,adb shell input tap x3 y3
+Instagram,Leave a comment on the post.,adb shell input tap x4 y4 && adb shell input text 'Great post!'
+Instagram,Send a direct message to a friend.,"adb shell input tap x5 y5 && adb shell input text 'Hey, how are you?'"
+Pinterest,Open the Pinterest app.,adb shell am start -n com.pinterest/com.pinterest.activity.PinterestActivity
+Pinterest,Search for a recipe.,adb shell input tap x6 y6 && adb shell input text 'Chocolate cake recipe' && adb shell input keyevent 66
+Pinterest,Save a pin to your board.,adb shell input tap x7 y7
+Pinterest,Create a new board.,adb shell input tap x8 y8 && adb shell input text 'My Recipes' && adb shell input tap x9 y9
+Pinterest,Pin a recipe to the new board.,adb shell input tap x10 y10
+LinkedIn,Open the LinkedIn app.,adb shell am start -n com.linkedin.android/com.linkedin.android.authenticator.LaunchActivity
+LinkedIn,Search for a job title.,adb shell input tap x11 y11 && adb shell input text 'Software Engineer' && adb shell input keyevent 66
+LinkedIn,Apply to the first job in the search results.,adb shell input tap x12 y12 && adb shell input tap x13 y13
+LinkedIn,Send a connection request to a user.,adb shell input tap x14 y14
+LinkedIn,Send a message to the user after they accept your request.,adb shell input tap x15 y15 && adb shell input text 'Hello! I saw your profile and wanted to connect.'
+Amazon,Open the Amazon app.,adb shell am start -n com.amazon.mShop.android/.home.HomeActivity
+Amazon,Search for a product titled 'Wireless Earbuds'.,adb shell input text 'Wireless Earbuds'
+Amazon,Tap on the first search result to view details.,adb shell input tap x1 y1
+Amazon,Add the product to your cart.,adb shell input tap x2 y2
+Amazon,Proceed to checkout.,adb shell input tap x3 y3
+Amazon,Enter your shipping address.,adb shell input text '123 Main Street'
+Amazon,Choose a payment method and complete the purchase.,adb shell input tap x4 y4
+Netflix,Open the Netflix app.,adb shell am start -n com.netflix.mediaclient/.ui.launch.UIWebViewActivity
+Netflix,Search for a movie titled 'The Avengers'.,adb shell input text 'The Avengers'
+Netflix,Tap on the first search result to play the movie.,adb shell input tap x5 y5
+Netflix,Pause the movie.,adb shell input tap x6 y6
+Netflix,Add the movie to 'My List'.,adb shell input tap x7 y7
+Netflix,Skip to the next episode.,adb shell input tap x8 y8
+Google Maps,Open the Google Maps app.,adb shell am start -n com.google.android.apps.maps/.MapsActivity
+Google Maps,Search for a location titled 'Times Square'.,adb shell input text 'Times Square'
+Google Maps,Tap on the first search result to view the location.,adb shell input tap x9 y9
+Google Maps,Get directions to 'Central Park'.,adb shell input text 'Central Park'
+Google Maps,Choose walking as the mode of transportation.,adb shell input tap x10 y10
+Google Maps,Start navigation to Central Park.,adb shell input tap x11 y11
+YouTube,Open the YouTube app.,adb shell am start -n com.google.android.youtube/.HomeActivity
+YouTube,Search for a video titled 'Funny Cat Compilation'.,adb shell input text 'Funny Cat Compilation'
+YouTube,Tap on the first search result to play the video.,adb shell input tap x1 y1
+YouTube,Pause the video.,adb shell input tap x2 y2
+YouTube,Like the video.,adb shell input tap x3 y3
+YouTube,Subscribe to the channel.,adb shell input tap x4 y4
+Spotify,Open the Spotify app.,adb shell am start -n com.spotify.music/.MainActivity
+Spotify,Search for a song titled 'Shape of You'.,adb shell input text 'Shape of You'
+Spotify,Tap on the first search result to play the song.,adb shell input tap x5 y5
+Spotify,Add the song to your playlist.,adb shell input tap x6 y6
+Spotify,Create a new playlist named 'Favorites'.,adb shell input text 'Favorites'
+Spotify,Add the song to the 'Favorites' playlist.,adb shell input tap x7 y7
+Uber,Open the Uber app.,adb shell am start -n com.ubercab/.client.core.main.MainActivity
+Uber,Set your pickup location to '123 Main Street'.,adb shell input text '123 Main Street'
+Uber,Set your destination to '456 Elm Street'.,adb shell input text '456 Elm Street'
+Uber,Choose UberX as your ride option.,adb shell input tap x8 y8
+Uber,Confirm your ride request.,adb shell input tap x9 y9
+WhatsApp,Open a chat with a contact named 'John'.,adb shell input tap x1 y1
+WhatsApp,"Type 'Hello, how are you?' in the chat field.","adb shell input text 'Hello, how are you?'"
+WhatsApp,Tap on the send button to send the message.,adb shell input tap x2 y2
+WhatsApp,Send a photo from your gallery to the chat.,adb shell input tap x3 y3
+Snapchat,Swipe right to access your chat list.,adb shell input swipe x1 y1 x2 y2
+Snapchat,Open a chat with a friend named 'Jane'.,adb shell input tap x3 y3
+Snapchat,Take a photo with the camera.,adb shell input tap x4 y4
+Snapchat,Draw something on the photo.,adb shell input swipe x5 y5 x6 y6
+Snapchat,Add a caption to the photo.,adb shell input text 'Fun times!'
+Snapchat,Send the photo with the caption to your friend.,adb shell input tap x7 y7
+TikTok,Open the 'Discover' tab to explore trending videos.,adb shell input tap x8 y8
+TikTok,Like the first video on the 'For You' page.,adb shell input tap x9 y9
+TikTok,Follow the user who posted the liked video.,adb shell input tap x10 y10
+TikTok,Share the video to your Instagram story.,adb shell input tap x11 y11
+WhatsApp,Open the WhatsApp app.,adb shell am start -n com.whatsapp/.Main
+WhatsApp,Tap on the 'Agree and Continue' button.,adb shell input tap x1 y1
+WhatsApp,Enter your phone number in the provided field.,adb shell input text '1234567890'
+WhatsApp,Tap on the 'Next' button to proceed.,adb shell input tap x2 y2
+WhatsApp,Enter the verification code received on your phone.,adb shell input text '123456'
+WhatsApp,Tap on the 'Continue' button to confirm your phone number.,adb shell input tap x3 y3
+Snapchat,Open the Snapchat app.,adb shell am start -n com.snapchat.android/.LandingPageActivity
+Snapchat,Tap on the 'Sign Up' or 'Create Account' button.,adb shell input tap x1 y1
+Snapchat,Enter your first name in the provided field.,adb shell input text 'John'
+Snapchat,Enter your last name in the provided field.,adb shell input text 'Doe'
+Snapchat,Enter your date of birth in the provided field.,adb shell input text '01/01/1990'
+Snapchat,Choose a username for your account.,adb shell input text 'my_snapchat_username'
+Snapchat,Choose a password for your account.,adb shell input text 'P@ssw0rd123'
+Snapchat,Tap on the 'Sign Up' or 'Create Account' button to proceed.,adb shell input tap x2 y2
+TikTok,Open the TikTok app.,adb shell am start -n com.zhiliaoapp.musically/com.ss.android.ugc.aweme.main.MainActivity
+TikTok,Tap on the 'Sign Up' or 'Create Account' button.,adb shell input tap x1 y1
+TikTok,Enter your date of birth in the provided field.,adb shell input text '01/01/1990'
+TikTok,Enter your email address or phone number in the provided field.,adb shell input text 'johndoe@example.com'
+TikTok,Choose a password for your account.,adb shell input text 'P@ssw0rd123'
+TikTok,Tap on the 'Sign Up' or 'Create Account' button to proceed.,adb shell input tap x2 y2
+Twitter,Open the Twitter app.,adb shell am start -n com.twitter.android/.StartActivity
+Twitter,Tap on the 'Sign Up' or 'Create Account' button.,adb shell input tap x1 y1
+Twitter,Enter your full name in the provided field.,adb shell input text 'John Doe'
+Twitter,Enter your phone number or email address in the provided field.,adb shell input text 'johndoe@example.com'
+Twitter,Choose a password for your account.,adb shell input text 'P@ssw0rd123'
+Twitter,Tap on the 'Next' button to proceed.,adb shell input tap x2 y2
+Twitter,Enter the verification code sent to your phone number or email address.,adb shell input text '123456'
+Twitter,Tap on the 'Verify' button to confirm your phone number or email address.,adb shell input tap x3 y3
+Instagram,Open the Instagram app.,adb shell am start -n com.instagram.android/.activity.MainTabActivity
+Instagram,Tap on the 'Sign Up' or 'Create Account' button.,adb shell input tap x1 y1
+Instagram,Enter your phone number or email address in the provided field.,adb shell input text 'johndoe@example.com'
+Instagram,Enter your full name in the provided field.,adb shell input text 'John Doe'
+Instagram,Choose a username for your account.,adb shell input text 'my_username'
+Instagram,Choose a password for your account.,adb shell input text 'P@ssw0rd123'
+Instagram,Tap on the 'Next' button to proceed.,adb shell input tap x2 y2
+LinkedIn,Open the LinkedIn app.,adb shell am start -n com.linkedin.android/.AuthActivity
+LinkedIn,Tap on the 'Sign Up' or 'Create Account' button.,adb shell input tap x1 y1
+LinkedIn,Enter your first name in the provided field.,adb shell input text 'John'
+LinkedIn,Enter your last name in the provided field.,adb shell input text 'Doe'
+LinkedIn,Enter your email address in the provided field.,adb shell input text 'johndoe@example.com'
+LinkedIn,Choose a password for your account.,adb shell input text 'P@ssw0rd123'
+LinkedIn,Tap on the 'Agree & Join' button to proceed.,adb shell input tap x2 y2
